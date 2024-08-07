@@ -1,0 +1,231 @@
+body,
+ul,
+li,
+p {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  font-size: 1.2rem;
+  font-family: Arial;
+}
+
+body {
+  margin-bottom: 100px;
+  background-color: #ddb8f1;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 100px;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.header {
+  background: #000000;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.mina-regular-logo {
+  font-family: "Mina", sans-serif;
+  font-weight: 400;
+  font-size: 80px;
+  font-style: normal;
+  color: #ffffff;
+  text-align: start;
+  margin:10px;
+}
+
+.cinzel-selos {
+  font-family: "Cinzel", serif;
+  font-weight: 900;
+  font-style: normal;
+  color: #000000;
+  margin-top: 0%;
+}
+
+.mina-regular {
+  font-family: "Mina", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #ffffff;
+  text-align: right;
+  margin:10px;
+}
+
+.logoimg {
+  width: 7%;
+  float:left;
+  margin:10px;
+  align-items: center;
+}
+
+.logoimgfooter {
+  width: 7%;
+  float:left;
+  margin:10px;
+  align-items: center;
+}
+
+.mina-regular-logofooter {
+  font-family: "Mina", sans-serif;
+  font-weight: 400;
+  font-size: 80px;
+  font-style: normal;
+  color: #ffffff;
+  text-align: start;
+  margin:10px;
+}
+
+.lupa {
+  display: flex;
+  width: 4%;
+  height: 100px;
+  float: right;
+  margin:10px;
+  align-items: center;
+}
+
+.tres {
+  display: flex;
+  width: 5%;
+  height: 100px;
+  float: right;
+  margin:10px;
+  align-items: center;
+}
+  
+
+.cinzel-main {
+  font-family: 'Cinzel', serif;
+  font-style: normal;
+  font-size:100px;
+  align-items: center;
+  margin-right: 0%;
+  margin-top: 7%;
+  margin-left: auto;
+  
+}
+
+.main {
+  display: flex;
+  margin-top: 0%;
+  margin-bottom: 0%;
+}
+
+.pontinhos {
+  max-width: 40px;
+  max-height: 40px;
+  margin-left: 75%;
+  margin-right: 5%;
+  margin-top: -5%;
+  margin-bottom: 10%;
+
+}
+
+* {
+    margin: 0;
+  }
+  html, body {
+    height: 100%;
+  }
+  .body-content {
+    min-height: 100%;
+    /* igual a altura do rodapé */
+    margin-bottom: 0px; 
+  }
+  .body-content:after {
+    content: "";
+    display: block;
+  }
+  .site-footer, .page-wrap:after {
+    height: 300px; 
+  }
+  .site-footer {
+    background-color: #000000;
+  }
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 900px;
+    padding: 100px;
+    margin:100px;
+    grid-gap: 50px;
+    align-items: center;
+    margin-left: 0%;
+    margin-top: 0%;
+    margin-right: auto;
+    margin-bottom: 0%;
+    
+}
+
+.grid img{
+  max-width: 200px;
+  max-height: 200px;
+}
+
+[data-tooltip] {
+  position: relative;
+  font-weight: bold;
+}
+
+[data-tooltip]:after {
+  display: none;
+  position: absolute;
+  top: 0px;
+  padding: 50px;
+  border-radius: 3px;
+  left: 0%;
+  right: 0%;
+  bottom: 0%;
+  content: attr(data-tooltip);
+  white-space: normal;
+  background-color: #000000a2;
+  color: White;
+}
+
+[data-tooltip]:hover:after {
+  display: block;
+} 
+
+.gridgrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  max-width: 650px;
+  padding: 20px;
+  grid-gap: 40px;
+  margin-top: 0%;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+  
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .gridgrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .gridgrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
